@@ -14,17 +14,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // UIColor(gradientStyle:UIGradientStyle, withFrame:CGRect, andColors:[UIColor])
-        let firstColor = UIColor(hexString: "FF8C2B", withAlpha: 1)
-        let secondColor = UIColor(hexString: "FF6322", withAlpha: 1)
-        
-        self.view.backgroundColor = UIColor(gradientStyle: .leftToRight, withFrame: view.frame, andColors: [firstColor!, secondColor!])
+        view.backgroundColor = CustomColor(withFrame: view.frame).getOrangeColor()
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
 
